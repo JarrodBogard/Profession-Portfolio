@@ -11,6 +11,7 @@ export const experienceData = [
     position: "Firefighter / Paramedic",
     img: firetruck,
     bgColor: "red",
+    className: "rotate-90-br-ccw",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const experienceData = [
     position: "Project Manager / Sales Representative",
     img: house,
     bgColor: "orange",
+    className: "slide-top",
   },
   {
     id: 3,
@@ -29,5 +31,6 @@ export const experienceData = [
     position: "Project Manager / Sales Representative",
     img: inspection,
     bgColor: "blue",
+    className: "rotate-90-bottom-cw",
   },
 ];

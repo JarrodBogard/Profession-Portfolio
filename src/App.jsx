@@ -62,45 +62,61 @@ function Header({ onSetPage }) {
             </a>
           </li>
         </ul>
+        {/* <div className="hamburger">
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div> */}
       </nav>
       <a className="resume" href={resume} download>
         Resume <span>&#8595;</span>
       </a>
+      <div className="hamburger">
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
     </header>
   );
 }
 
 function Main() {
   return (
-    <main>
-      <h1>Jarrod Bogard</h1>
-      <h2>Frontend Programmer</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis,
-        ipsa quas aperiam harum praesentium necessitatibus debitis soluta a odio
-        reiciendis modi maiores error, excepturi, omnis itaque mollitia
-        asperiores voluptatum. Rem enim molestias nulla id voluptas natus iusto
-        aut laboriosam nam excepturi eos deleniti saepe amet laudantium maxime
-        harum ratione commodi atque voluptates obcaecati, deserunt quos! Odio
-      </p>
-      <ul className="icons">
-        <li>
-          <a href="https://www.linkedin.com/in/jarrod-bogard" target="_blank">
-            <img src={linkedInIcon} alt="LinkedIn Icon" />
-          </a>
-        </li>
-        <li>
-          <a href="mailto:jarrodbogard@gmail.com">
-            <img src={googleIcon} alt="Google Icon" />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/JarrodBogard" target="_blank">
-            <img src={githubIcon} alt="GitHub Icon" />
-          </a>
-        </li>
-      </ul>
-    </main>
+    <>
+      <main>
+        <h1>Jarrod Bogard</h1>
+        <h2>Frontend Programmer</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+          officiis, ipsa quas aperiam harum praesentium necessitatibus debitis
+          soluta a odio reiciendis modi maiores error, excepturi, omnis itaque
+          mollitia asperiores voluptatum. Rem enim molestias nulla id voluptas
+          natus iusto aut laboriosam nam excepturi eos deleniti saepe amet
+          laudantium maxime harum ratione commodi atque voluptates obcaecati,
+          deserunt quos! Odio
+        </p>
+        <ul className="icons">
+          <li>
+            <a href="https://www.linkedin.com/in/jarrod-bogard" target="_blank">
+              <img src={linkedInIcon} alt="LinkedIn Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:jarrodbogard@gmail.com">
+              <img src={googleIcon} alt="Google Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/JarrodBogard" target="_blank">
+              <img src={githubIcon} alt="GitHub Icon" />
+            </a>
+          </li>
+        </ul>
+        {/* <a href="#section">&#8595;</a> */}
+      </main>
+      {/* work on section page scroll */}
+      {/* <section id="section">stuff</section> */}
+    </>
   );
 }
 
@@ -112,23 +128,23 @@ function Skills() {
           &#8592;
         </a>
         <h1>Skills</h1>
-        <div className="skillset-left slide-right">
-          <span>JavaScript</span>
-          <span>React.js</span>
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>BootStrap</span>
-          <span>Redux Toolkit</span>
-        </div>
-        <div className="skillset-right slide-left">
-          <span>RESTful APIs</span>
-          <span>Node.js</span>
-          <span>Git</span>
-          <span>GitHub</span>
-          <span>Fetch API</span>
-          <span>Axios</span>
-          <span>SQL</span>
-        </div>
+        <ul className="skillset-left slide-right">
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>BootStrap</li>
+          <li>Redux Toolkit</li>
+        </ul>
+        <ul className="skillset-right slide-left">
+          <li>RESTful APIs</li>
+          <li>Node.js</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Fetch API</li>
+          <li>Axios</li>
+          <li>SQL</li>
+        </ul>
       </div>
     </>
   );
@@ -142,7 +158,7 @@ function Experience() {
   }, []);
 
   const experienceCard = data.map((el) => (
-    <div className={`card ${el.bgColor}`} key={el.id}>
+    <div className={`card ${el.bgColor} ${el.className}`} key={el.id}>
       <div className="card-content">
         <img src={el.img} alt="" />
         <h2 className="title">{el.company}</h2>
@@ -161,7 +177,7 @@ function Experience() {
       <a href=".." className="back-button">
         &#8592;
       </a>
-      <h1>Experience</h1>
+      <h1></h1>
       <div className="card-container">{experienceCard}</div>
     </div>
   );
@@ -180,13 +196,6 @@ function Projects() {
         <h2 className="title">{el.name}</h2>
         <img src={el.img} alt="" />
         <p className="description">{el.description}</p>
-        {/* <form>
-          <input
-            type="submit"
-            formAction="https://www.freecodecamp.org/"
-            value="freeCodeCamp"
-          />
-        </form> */}
         <ul>
           <li>
             <a href={el.demoLink} target="_blank">
