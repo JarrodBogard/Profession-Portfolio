@@ -87,13 +87,13 @@ function Main() {
         <h1>Jarrod Bogard</h1>
         <h2>Frontend Programmer</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-          officiis, ipsa quas aperiam harum praesentium necessitatibus debitis
-          soluta a odio reiciendis modi maiores error, excepturi, omnis itaque
-          mollitia asperiores voluptatum. Rem enim molestias nulla id voluptas
-          natus iusto aut laboriosam nam excepturi eos deleniti saepe amet
-          laudantium maxime harum ratione commodi atque voluptates obcaecati,
-          deserunt quos! Odio
+          Hello! I am Jarrod Bogard, a focused and driven web developer,
+          currently located in the Raleigh-Durham area. With a strong affintiy
+          for web development, I undertake coding projects equipped with a
+          wide-array of skills and tools. My repertoire includes JavaScript,
+          React.JS, CSS, Material UI, and Bootstrap for building stylish web
+          applications and user interfaces, and React Context and Redux for
+          seamless state management.
         </p>
         <ul className="icons">
           <li>

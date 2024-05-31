@@ -1,16 +1,18 @@
 import firetruck from "../assets/firetruck.jpeg";
 import footballApp from "../assets/footballApp.png";
-import gamesLibrary from "../assets/gamesLibrary.png";
-import gameLibraryUpdated from "../assets/gameLibraryUpdated.png";
+import gameLibrary from "../assets/gameLibraryUpdated.png";
+import newsApp from "../assets/news.png";
 
 export const projectsData = [
   {
     id: 1,
-    name: "News Fetcher",
+    name: "Easy News",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis ipsa quas aperiam harum praesentium necessitatibus debitis soluta a odio reiciendis modi maiores error excepturi omnis itaque mollitia asperiores voluptatum. Rem enim molestias nulla id voluptas natus iusto aut laboriosam nam excepturi eos deleniti saepe amet laudantium maxime harum ratione commodi atque voluptates obcaecati deserunt quos! Odio",
-    img: firetruck,
+      "Easy News App is an application that allows users to seamlessly search for news articles based on a search term or predefined catergory. Users can easily favorite articles and view them at a later time from their 'Saved' page.",
+    img: newsApp,
     createdAt: "",
+    demoLink: "https://www.loom.com/share/dcc56b4470c64832b20d416c3ce814e2",
+    repoLink: "https://github.com/JarrodBogard/news_app",
     hasWebsite: true,
   },
   {
@@ -18,7 +20,7 @@ export const projectsData = [
     name: "Games Library",
     description:
       "The Games Library app keeps your video game collection organized. Sign up or log in and view your existing library.  Easily add new games by entering title, price, and release date.  Add images and remove unwanted games with a simple tap. Keep track of your collection effortlessly.",
-    img: gameLibraryUpdated,
+    img: gameLibrary,
     createdAt: "",
     demoLink: "https://www.loom.com/share/5d3f0ee0f5f64ae38cc0ff656a2cd8d8",
     repoLink: "https://github.com/JarrodBogard/game-library-frontend",
