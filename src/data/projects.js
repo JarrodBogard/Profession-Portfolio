@@ -1,4 +1,3 @@
-import firetruck from "../assets/firetruck.jpeg";
 import footballApp from "../assets/footballApp.png";
 import gameLibrary from "../assets/gameLibraryUpdated.png";
 import newsApp from "../assets/news.png";
@@ -13,7 +12,7 @@ export const projectsData = [
     createdAt: "",
     demoLink: "https://www.loom.com/share/dcc56b4470c64832b20d416c3ce814e2",
     repoLink: "https://github.com/JarrodBogard/news_app",
-    hasWebsite: true,
+    hasWebsite: false,
   },
   {
     id: 2,

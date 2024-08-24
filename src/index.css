@@ -452,6 +452,7 @@ main h2 {
 .project-content img {
   width: 100%;
   height: 350px;
+  border-radius: 7px;
   object-fit: cover;
   /* height: 400px; */
 }
